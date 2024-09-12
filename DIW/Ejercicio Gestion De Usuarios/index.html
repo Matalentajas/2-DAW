@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de usuarios</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="cuerpo">
+        <div id="formulario">
+
+            <h2>Formulario de Inscripción</h2>
+            <input id="nombre" type="text" placeholder="Nombre">
+            <input id="salario" type="number" placeholder="Salario">
+            <input id="departamento" type="text" placeholder="Departamento">
+            <button id="enviar">Enviar</button>
+
+        </div>
+        <div id="list">
+
+            <div id="buscador">
+                <input id="input_buscador" type="text" placeholder="Buscar empleado">
+                <button id="botonbusca" ><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div id="mostrar">            
+                <h3 id="html_h3">Listado Empleados</h3>
+                <p id="mostrar_lista"></p>
+                <p id="mostrar_empleados"></p>
+                <h2 id="total_salario"></h2></div>
+            </div>
+        </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

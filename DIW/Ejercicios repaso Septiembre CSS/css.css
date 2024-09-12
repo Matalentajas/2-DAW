@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/849/587/original/abstract-white-background-free-vector.jpg");
+
+    background-size: 100%;
+}
+nav{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #377076;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+nav li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+nav li:hover{
+
+    background-color: #3f8a69;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: 1s;
+
+}
+
+nav h1{
+    font-size: 50px;
+    color: #f9f9f6;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f9f9f6;
+    font-size: 20px;
+}
+
+label{
+    display: none;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+form{
+    border: 1px solid;
+    background-color: #3f8a69;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    width: 45vh;
+    height: 80vh;
+    border-radius: 10px;
+
+}
+
+form p{
+    color: #f9f9f6;
+    font-size: 20px;
+    border-color: 2px solid #b8c394;
+}
+
+form input{
+    height: 30px;
+    width: 37vh;
+    border: 2px solid #b8c394;
+}
+
+form select{
+    height: 30px;
+    width: 37vh;
+}
+
+textarea{
+    height: 70px;
+    width: 37vh;
+    resize:none;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+form h2{
+    color: #f9f9f6;
+    font-size: 25px;
+}
+
+#enviar{
+    height: 30px;
+    width: 80px;
+}
+
+#enviar:hover{
+    background-color: #b8c394;
+    transition: 1s;
+    border: 1px white;
+
+}
+
+
+@media only screen and (max-width: 760px){
+
+
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav li{
+        display: none;
+    }
+
+    label{
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #f9f9f6;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #f9f9f6;
+        
+    }
+
+    label:hover{
+        transition: 1s;
+        color: #377076;
+        background-color: #f9f9f6;
+        border: 1px solid #377076;
+    }
+
+
+}
