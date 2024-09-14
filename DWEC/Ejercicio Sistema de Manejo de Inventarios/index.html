@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sistema de Manejo de Inventarios</title>
+</head>
+<body>
+    <nav id="menu-bar">
+        <div class="grupo">
+          <img id="logo" src="./img/logo.png" alt="">
+        </div>
+        <div id="grupo">
+          <a class="menu">Productos</a>
+          <a class="menu">Carrito</a>
+          <a class="menu">Facturación</a>
+          <a id="actualizar" class="menu">Actualizar Stock</a>
+        </div>
+      </nav>
+
+      <div class="contenedor-flex">
+        <div class="elemento">
+          <div class="contenido">
+            <img src="https://m.media-amazon.com/images/I/7182Ei0odBL._AC_UF894,1000_QL80_.jpg" alt="Botella-agua">
+            <h2>Botella de Agua Reutilizable "EcoFlow"</h2>
+            <p>Botella de acero inoxidable con aislamiento térmico, mantiene bebidas frías por 24 horas y calientes por 12 horas. Ideal para el uso diario y actividades al aire libre.</p>
+            <p>$25.99</p>
+            <p id="stock1">Stock:100</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="elemento">
+            <div class="contenido">
+              <img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202302/20/00138545856924____1__1200x1200.jpg" alt="">
+              <h2>Auriculares Inalámbricos "SoundVibe"</h2>
+              <p>Auriculares Bluetooth con cancelación de ruido y hasta 10 horas de batería. Perfectos para escuchar música y hacer llamadas sin interrupciones.</p>
+              <p>$49.99</p>
+              <p id="stock2">Stock:50</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://www.sbsmobile.com/esp/249164-thickbox_default/cargador-solar-portatil-21v.jpg" alt="">
+              <h2>Cargador Solar Portátil "SunCharge"</h2>
+              <p>Cargador solar compacto con capacidad de 10,000 mAh. Compatible con cualquier dispositivo USB, ideal para viajes o emergencias.</p>
+              <p>$39.99</p>
+              <p id="stock3">Stock:75</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/5600821037176_1.jpg" alt="">
+              <h2>Mochila Antirrobo "SafeGuard"</h2>
+              <p>Mochila resistente al agua con cierres ocultos y compartimento para laptop. Diseño minimalista y seguro para el día a día en la ciudad.</p>
+              <p>$59.99</p>
+              <p id="stock4">Stock:60</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202308/18/00197626112599____9__1200x1200.jpg">
+              <h2>Reloj Inteligente "PikaLife"</h2>
+              <p>Reloj inteligente con monitor de frecuencia cardíaca, seguimiento de actividad física y notificaciones. Compatible con iOS y Android.</p>
+              <p>$79.99</p>
+              <p id="stock5">Stock:40</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://yebio.es/wp-content/uploads/2021/01/Difusor-humidificador-Esential-Zen-Esential-Aroms.jpg">
+              <h2>Difusor de Aromaterapia "ZenMist"</h2>
+              <p>Difusor ultrasónico de aceites esenciales con luz LED. Proporciona una atmósfera relajante en cualquier espacio.</p>
+              <p>$29.99</p>
+              <p id="stock6">Stock:150</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://www.microlediberica.com/wp-content/uploads/2020/06/lampara-led-corn-alumbrado-publico-e27-28w-c.jpg" >
+              <h2>Lámpara LED "GlowLite"</h2>
+              <p>Lámpara de mesa LED regulable con control táctil y tres niveles de brillo. Diseño moderno y eficiente en consumo de energía.</p>
+              <p>$19.99</p>
+              <p id="stock7">Stock:200</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://bavalu.com/cdn/shop/products/caja-herramientas.jpg?v=1592907636">
+              <h2>Kit de Herramientas Multiusos "ToolMaster"</h2>
+              <p>Conjunto de herramientas de 12 piezas en un estuche compacto. Incluye destornilladores, alicates y cinta métrica, ideal para reparaciones domésticas.</p>
+              <p>$34.99</p>
+              <p id="stock8">Stock:90</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div class="elemento">
+            <div class="contenido">
+              <img src="https://www.ofisillas.es/blog/wp-content/uploads/2019/05/Coj%c3%adn-ergon%c3%b3mico-silla-de-oificina.jpg" >
+              <h2>Cojín Ergonomico para Silla "ComfortSeat"</h2>
+              <p>Cojín de espuma viscoelástica para aliviar la presión en la espalda y mejorar la postura durante largas horas de trabajo o estudio.</p>
+              <p>$24.99</p>
+              <p id="stock9">Stock:120</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+        
+      </div>
+      
+    <script src="./script/carrito.js" ></script>
+    <script src="./script/facturacion.js" ></script>
+    <script src="./script/productos.js" ></script>
+</body>
+</html>
