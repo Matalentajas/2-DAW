@@ -6,7 +6,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Barra de navegación */
 #menu-bar {
     background-color: #2C3E50;
     display: flex;
@@ -40,8 +39,7 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Contenedor principal */
-.contenedor-flex {
+.productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -103,7 +101,7 @@ button:hover {
     background-color: #C0392B;
 }
 
-/* Adaptación para móviles */
+/* Responsif */
 @media (max-width: 768px) {
     .elemento {
         width: 100%;
