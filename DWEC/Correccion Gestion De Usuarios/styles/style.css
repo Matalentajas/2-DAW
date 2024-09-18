@@ -1,104 +1,103 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Rufina", serif;
-    
 }
-
 #principal{
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(90deg, rgba(173, 214, 255, 1) 0%, rgba(255, 148, 201, 1) 100%);
-
+    background-color: white;
 }
-
-#gestionbox{
-
-    background: white;
+#gestionBox{
+    background: #f0f0f0;
     width: 70%;
-    height: 500px;
-    border-radius: 15px;
+    height: 400px;
+    border-radius: 10px;
     display: flex;
     gap: 10px;
-
+    box-shadow: 1px 1px 3px #b2b2b2;
 }
-
 #datos{
-
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 30%;
     padding: 2rem;
-    align-items: center;
-
 }
-
-#datos input{
-
+#datos input, select, button{
     width: 100%;
     padding: .5rem;
-    border: 1px solid gray;
+    border: none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 5px;
     text-align: center;
     font-size: 15px;
     letter-spacing: 1px;
-
+    box-shadow: inset 1px 1px 3px #bcbcbc;
 }
-
 #enviar{
-
-    width: 40%;
+    width: 45%;
     cursor: pointer;
+    background-color:  rgb(193, 234, 221);
+    color: black;
+    border: none;
+    box-shadow: inherit;
+    transition: .3s ease-in-out;
+}
+#enviar:hover{
+    background-color: #2061a1;
+    color: white;
+}
+#lista{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
     
 }
-
-#enviar:hover{
-
-    background-color: rgb(87, 87, 87);
-    color: white;
-    transition: .5s;
-
-}
-
-#lista{
-
-    width: 70%;
-
-}
-
 #lista_em{
-
     padding: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow-y: scroll;
 }
-
 .list-item{
-
     display: flex;
-    background-color: antiquewhite;
+    background-color: rgb(229 229 229);
+    display: flex;
     justify-content: space-evenly;
     padding: 1rem;
-    border-radius: 15px;
-
+    border-radius: 5px;
+    color: #555555;
 }
-
-@media only screen and(max-width: 768px){
-
-    #gestionbox{
-
+@media only screen and (max-width: 768px){
+    #principal{
         height: inherit;
-
+        background: inherit;
     }
-
-    #
-
+    #gestionBox{
+        width: 100%;
+        flex-direction: column;
+    }
+    #datos{
+        width: 100%;
+    }
+    #lista{
+        width: 100%;
+    }
+    #lista_em{
+        padding: .5rem;
+    }
+    .list-item{
+        width: 100%;
+        padding: inherit;
+    }
 }
+

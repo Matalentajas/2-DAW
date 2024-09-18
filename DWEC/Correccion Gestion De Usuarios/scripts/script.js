@@ -1,40 +1,40 @@
 const empleados = []
-let botonenviar = document.getElementById("enviar")
+let botonEnviar = document.getElementById("enviar")
 let lista = document.getElementById("lista_em")
-
-document.getElementById("msg").innerHTML = "No hay datos"
-
-botonenviar.addEventListener("click", () => {
-    let nombre = document.getElementById("nom").value
-    let salario = document.getElementById("sal").value
-    let departamento = document.getElementById("dep").value
-    console.log(nombre, salario, departamento);
+document.getElementById("msg").innerHTML = "No hay Datos"
+botonEnviar.addEventListener("click", ()=>{
+    let nombre = document.getElementById("nom")
+    let salario = document.getElementById("sal")
+    let departamento = document.getElementById("dep")
+    console.log(nombre.value, salario.value, departamento.value);
     empleados.push(
         {
-            "nombre" : nombre,
-            "salario" : salario,
-            "departamento" : departamento
+            "nombre": nombre.value,
+            "salario": salario.value,
+            "departamento": departamento.value
         }
     )
     nombre.value = ""
-    salario.valuer = ""
+    salario.value = ""
     departamento.value = null
-
-    document.getElementById
     document.getElementById("msg").style.display = "none"
+    console.log(empleados); 
+    lista.innerHTML=""
+    for(let i=0; i<empleados.length; i++) {
+        let textoDepartamento={
+            des:'Desarrollo',
+            dis:'Diseño',
+            rec:'Recursos Humanos'
 
-    lista.innerHTML = ""
-
-    for (let i = 0; i < empleados.length; i++) {
-
+        }[empleados[i].departamento]
+        
         lista.innerHTML += `
             <li class="list-item">
                 <span>${empleados[i].nombre}</span>
                 <span>${empleados[i].salario}</span>
-                <span>${empleados[i].departamento}</span>
-
+                <span>${textoDepartamento}</span>
             </li>
         `
     }
-    
+
 })
