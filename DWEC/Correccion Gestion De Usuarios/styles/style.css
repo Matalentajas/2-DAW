@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Rufina", serif;
+    
+}
+
+#principal{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(173, 214, 255, 1) 0%, rgba(255, 148, 201, 1) 100%);
+
+}
+
+#gestionbox{
+
+    background: white;
+    width: 70%;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+
+}
+
+#datos{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    padding: 2rem;
+    align-items: center;
+
+}
+
+#datos input{
+
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+#enviar{
+
+    width: 40%;
+    cursor: pointer;
+    
+}
+
+#enviar:hover{
+
+    background-color: rgb(87, 87, 87);
+    color: white;
+    transition: .5s;
+
+}
+
+#lista{
+
+    width: 70%;
+
+}
+
+#lista_em{
+
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-item{
+
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    padding: 1rem;
+    border-radius: 15px;
+
+}
+
+@media only screen and(max-width: 768px){
+
+    #gestionbox{
+
+        height: inherit;
+
+    }
+
+    #
+
+}

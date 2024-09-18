@@ -19,7 +19,6 @@ const carrito = {
         if (producto_existe) {
             producto_existe.cantidad -= cantidad;
 
-            // Si la cantidad es 0 o menos, eliminamos el producto del carrito
             if (producto_existe.cantidad <= 0) {
                 this.productos = this.productos.filter(producto => producto.id !== id);
             }
