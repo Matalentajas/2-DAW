@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Librería</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="cuerpo">
+        <div id="formulario">
+            <h2>Formulario de Inscripción de Libros</h2>
+            <input id="nombre_ins" type="text" placeholder="Nombre">
+            <input id="autor_ins" type="text" placeholder="Autor">            
+            <input id="año_ins" type="number" placeholder="Año">
+            <button id="enviar_ins">Enviar</button>
+            
+            <h2>Buscar libros</h2>
+            <input id="nombre_bus" type="text" placeholder="Autor">
+            <button id="enviar_bus">Enviar</button>
+    
+            <div id="filtro">
+                <h2>Filtrar Libros</h2>
+                <input id="autor_filtro" type="text" placeholder="Autor">
+                <input id="año_filtro" type="number" placeholder="Año">
+                <button id="filtrar">Filtrar</button>
+            </div>
+        </div>
+    
+        <div id="list">
+            <div id="mostrar">            
+                <h3 id="html_h3">Listado Libros</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./books.js"></script>
+
+</body>
+</html>
+
