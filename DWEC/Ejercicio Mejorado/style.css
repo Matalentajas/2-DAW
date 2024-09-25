@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background: #DBFFFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#guardado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#filtro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.inputs{
+    margin: 20px;
+    width: 294px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #A2DAD3;
+    box-shadow: 0px 4px 4px 0px #AAA inset;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Guardar{
+    margin: 20px;
+    width: 161.514px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #C3F8BD;
+    box-shadow: 0px 4px 4px 0px #AAA;
+}
+
+h2{
+
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    font-family: "Goudy Bookletter 1911";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input_resultado{
+    width: 358px;
+    height: 147px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #969696;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: #FFF;
+    text-align: center;
+    font-family: "Goudy Bookletter 1911";
+    font-size: 32px;
+    font-style: normal;
+}
+
+.autor{
+    color: #FFF;
+    text-align: center;
+    font-family: "Goudy Bookletter 1911";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.año{
+    display: flex;
+    color: #FFF;
+    font-family: "Goudy Bookletter 1911";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+

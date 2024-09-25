@@ -1,0 +1,31 @@
+/* <script>
+
+        let obtener_datos = () => {
+            return new Promise( (resolve, reject) => {
+                const par = "El número es par."
+                const impar = "El número es impar."
+
+                // const error = true
+                let numero = 6
+
+                setTimeout( () => {
+
+                    if (numero % 2 == 0) {
+                        resolve( () => {
+                            let h1 = document.createElement("h1")
+                            h1.textContent = "El número es par."
+                            document.body.appendChild(h1)
+                        })
+                    }else{
+                        reject(impar)
+                    }
+
+                },2000 )
+            } )
+        }
+        obtener_datos()
+        .then (res => res())
+        .catch (res => res())
+
+
+    </script> */
