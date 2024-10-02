@@ -1,0 +1,80 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Roboto", sans-serif
+
+$relleno: 2rem
+$tam_icon: 40px
+
+@mixin flex($jus,$dir,$ali)
+    display: flex
+    flex-direction: $dir
+    justify-content: $jus
+    align-items: $ali
+
+#principal
+    position: relative
+    height: 100vh
+    background: linear-gradient(180deg, #82b4ff, #27777C)
+    footer
+        @include flex($jus: space-around ,$dir: row,$ali: center)
+        position: fixed
+        bottom: 0
+        background: #8dddea 
+        width: 100%
+        padding: $relleno
+        i
+           font-size: $tam_icon
+        input
+            
+            width: 60%
+            height: 40px
+            outline: none
+            border: none
+            padding: .5rem
+            font-size: 20px
+            border-radius: 20px
+    header
+        @include flex($jus: space-around ,$dir: row,$ali: center)
+        gap: 10px  
+        position: fixed
+        z-index: 3
+        top: 0
+        width: 100%
+        background: #8dddea  
+        padding: $relleno
+        i
+           font-size: $tam_icon
+        #box-img
+            width: 60px
+            height: 60px
+            border-radius: 50%
+            img
+                width: 100%
+        span
+            letter-spacing: 2px
+            font-size: 30px
+    #main
+        padding: 9rem 1rem
+        min-height: calc( 100vh - 77px)
+        .msg2
+            margin-top: 30px
+            background: white
+            padding: 8px
+            border-radius: 20px 20px 20px 0px
+            position: relative
+        .msg1
+            margin-top: 30px 
+            background: green
+            padding: 8px
+            border-radius: 20px 20px 0px 20px
+            position: relative
+        span
+            position: absolute
+            bottom: -24px
+            right: 24px
+            color: white
+
+     
+      

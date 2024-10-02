@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#principal {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(180deg, #82b4ff, #27777C);
+}
+#principal footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: #8dddea;
+  width: 100%;
+  padding: 2rem;
+}
+#principal footer i {
+  font-size: 40px;
+}
+#principal footer input {
+  width: 60%;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 20px;
+  border-radius: 20px;
+}
+#principal header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  background: #8dddea;
+  padding: 2rem;
+}
+#principal header i {
+  font-size: 40px;
+}
+#principal header #box-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#principal header #box-img img {
+  width: 100%;
+}
+#principal header span {
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+#principal #main {
+  padding: 9rem 1rem;
+  min-height: calc(100vh - 77px);
+}
+#principal #main .msg2 {
+  margin-top: 30px;
+  background: white;
+  padding: 8px;
+  border-radius: 20px 20px 20px 0px;
+  position: relative;
+}
+#principal #main .msg1 {
+  margin-top: 30px;
+  background: green;
+  padding: 8px;
+  border-radius: 20px 20px 0px 20px;
+  position: relative;
+}
+#principal #main span {
+  position: absolute;
+  bottom: -24px;
+  right: 24px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
