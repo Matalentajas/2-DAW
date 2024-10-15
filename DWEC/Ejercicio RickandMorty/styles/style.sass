@@ -1,0 +1,105 @@
+@import 'presets'
+
+// Pantalla de carga //
+#image-box
+  display: none
+  position: fixed
+  top: 30%
+  left: 40%
+  
+
+
+
+// BOTON //
+//Colores usador//
+
+#boton
+  background-color: #00ff00
+  color: #fffff
+  border: 2px solid #ffcc00
+  padding: 10px 20px
+  font-size: 1.2rem
+  font-family: 'Press Start 2P', cursive
+  text-transform: uppercase
+  letter-spacing: 2px
+  cursor: pointer
+  border-radius: 5px
+  box-shadow: 0 0 10px rgba(#00ff00, 0.5), 0 0 20px rgba(#ffcc00, 0.5)
+  position: relative
+  overflow: hidden
+
+  @include button-hover-effect
+
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 300%
+    height: 300%
+    background: radial-gradient(circle, rgba(#00ff00, 0.3), transparent)
+    transition: all 0.5s ease
+    transform: translate(-50%, -50%) scale(0)
+    z-index: 0
+
+  &:hover:before
+    transform: translate(-50%, -50%) scale(1)
+
+  &:active
+    transform: scale(0.95) rotate(-1deg)
+
+// Fin Boton // 
+
+// Cabecera //
+
+header
+    @include flexbox_header (center, column, center, center)
+    gap: 18vh
+    h1
+      margin: 60px
+      font-size: 100px
+      color: white
+
+// Contenido //
+
+#contenido
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 15vh
+    margin-top: 70px
+
+    #cajon_1,
+    #cajon_2
+        @include flexbox(center, row, center)
+        gap: 30px
+
+        .contenedor_personajes
+            border-radius: 10px
+            @include flexbox(center, columns, center)
+            width: 55vh
+            height: 30vh
+            background-color: #333
+            border: 2px solid green
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5)
+            transition: box-shadow 0.3s
+            border-radius: 10px 0 0 10px
+
+            &:hover
+              box-shadow: 0 8px 20px rgba(0, 255, 0, 0.8)
+            
+            img
+              width: 50vh
+              height: 30vh
+              object-fit: cover
+              border-radius: 10px 0 0 10px
+            .content
+                display: flex
+                flex-direction: column
+                color: white
+                padding: 10px
+
+
+
+

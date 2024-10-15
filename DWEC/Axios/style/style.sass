@@ -1,0 +1,94 @@
+@import 'presets'
+#head
+    @include flexbox(center, row, center)
+
+#encabezado
+    h1
+        @include flexbox(center, row, center)
+        margin-top: 30px
+        font-size: 60px
+    
+    #cont_boton
+        @include flexbox(center, row, center)
+        margin: 30px
+        height: 80%
+        width: 80%
+        img
+            width: 50%
+        button
+            background: green
+            color: white
+            height: 40px
+            width: 80px
+            border-radius: 20px
+            cursor: pointer
+
+#cuerpo
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 15vh
+
+    #linea_1
+        @include flexbox(center, row, center)
+        gap: 30px
+
+        .contenedor
+            border-radius: 10px
+            @include flexbox(center, row, center)
+            width: 55vh
+            height: 30vh
+            background-color: #DB9665
+            
+            img
+                border-radius: 10px 0 0 10px
+                width: 50vh
+                height: 30vh
+
+        #nombre
+            color: white
+            text-align: center
+        #estado
+            color: white
+            text-align: center
+        #lugar
+            color: white
+            text-align: center
+        .no_imp
+            color: white
+            text-align: center
+
+        
+    #linea_2
+        @include flexbox(center, row, center)
+        gap: 30px
+
+        .contenedor
+            
+            border-radius: 10px
+            @include flexbox(center, row, center) 
+            width: 55vh
+            height: 30vh
+            background-color: #DB9665
+            
+            img
+                border-radius: 10px 0 0 10px
+                width: 50vh
+                height: 30vh
+
+        #nombre
+            color: white
+            text-align: center
+        #estado
+            color: white
+            text-align: center
+        #lugar
+            color: white
+            text-align: center
+        .no_imp
+            color: white
+            text-align: center
+
+
+

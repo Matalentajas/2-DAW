@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  background-color: #333;
+}
+
+#image-box {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+#boton {
+  background-color: #00ff00;
+  color: #fffff;
+  border: 2px solid #ffcc00;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(255, 204, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#boton:hover {
+  background-color: #00ff00;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.7), 0 0 25px rgba(0, 255, 0, 0.8);
+}
+#boton:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(0, 255, 0, 0.3), transparent);
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 0;
+}
+#boton:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+#boton:active {
+  transform: scale(0.95) rotate(-1deg);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18vh;
+}
+header h1 {
+  margin: 60px;
+  font-size: 100px;
+  color: white;
+}
+
+#contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15vh;
+  margin-top: 70px;
+}
+#contenido #cajon_1,
+#contenido #cajon_2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+#contenido #cajon_1 .contenedor_personajes,
+#contenido #cajon_2 .contenedor_personajes {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: columns;
+  align-items: center;
+  width: 55vh;
+  height: 30vh;
+  background-color: #333;
+  border: 2px solid green;
+  box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5);
+  transition: box-shadow 0.3s;
+  border-radius: 10px 0 0 10px;
+}
+#contenido #cajon_1 .contenedor_personajes:hover,
+#contenido #cajon_2 .contenedor_personajes:hover {
+  box-shadow: 0 8px 20px rgba(0, 255, 0, 0.8);
+}
+#contenido #cajon_1 .contenedor_personajes img,
+#contenido #cajon_2 .contenedor_personajes img {
+  width: 50vh;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+#contenido #cajon_1 .contenedor_personajes .content,
+#contenido #cajon_2 .contenedor_personajes .content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */

@@ -2,12 +2,15 @@ import socket
 #Importamos para poder realizar hilos en la conexion y asi poder hacer varias conexiones a la vez
 import threading
 
-#Importamos para poner colores a cada usuario.
-from colorama import just_fix_windows_console
+import random
+from colorama import Fore, Style
 
-just_fix_windows_console()
+# Lista de colores
+colores = [Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN]
 
-from colorama import Fore, Back, Style
+color_usuario = random.choice(colores)
+
+##############################################################
 
 # Diccionario para almacenar los sockets de los clientes y sus nombres
 clientes = {}
@@ -15,13 +18,12 @@ clientes = {}
 # Función que manejará a cada cliente conectado
 def conexion_cliente(client_socket):
     # Pedir el nombre del cliente al conectarse
-    client_socket.send("Por favor ingresa tu nombre: ".encode('utf-8'))
     nombre = client_socket.recv(1024).decode('utf-8')
     clientes[client_socket] = nombre  # Guardar el nombre en el diccionario
-    print(f"{nombre} se ha unido al chat.")
+    print(color_usuario + nombre + " se ha unido al chat." + Style.RESET_ALL)
 
     # Notificar a todos que este cliente se ha unido
-    broadcast(f"{nombre} se ha unido al chat.".encode('utf-8'))
+    broadcast((color_usuario + nombre + " se ha unido al chat." + Style.RESET_ALL).encode('utf-8'))
 
     while True:
         try:
@@ -50,7 +52,7 @@ def broadcast(message):
             del clientes[client]
 
 # Configurar el servidor
-HOST = "localhost"
+HOST = "192.168.1.51"
 PORT = 65432
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
