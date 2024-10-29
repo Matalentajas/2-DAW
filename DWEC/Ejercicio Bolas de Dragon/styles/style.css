@@ -1,0 +1,116 @@
+#main {
+  display: flex;
+  flex-direction: column;
+}
+#main h1 {
+  text-align: center;
+  color: #ec407a;
+  font-size: 80px;
+  margin: 20px;
+  font-family: "Bangers", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#main aside {
+  text-align: center;
+  color: #4fc3f7;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+#main #gener {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  gap: 60px;
+  font-size: 20px;
+  color: #81c784;
+}
+
+#luchadores {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+#luchadores #caja_1, #luchadores #caja_2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#luchadores #caja_1 .card, #luchadores #caja_2 .card {
+  flex-basis: 18%;
+  height: 300px;
+  background-color: #f7e031;
+  border: 2px solid #ba68c8;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+  cursor: pointer;
+}
+#luchadores #caja_1 .card:hover, #luchadores #caja_2 .card:hover {
+  transform: scale(1.05);
+  background-color: #4fc3f7;
+}
+#luchadores #caja_1 .card img, #luchadores #caja_2 .card img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#luchadores #caja_1 .card h2, #luchadores #caja_2 .card h2 {
+  color: #ec407a;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+#luchadores #caja_1 .card p, #luchadores #caja_2 .card p {
+  font-size: 1rem;
+  color: #4fc3f7;
+  margin-bottom: 5px;
+}
+#luchadores #caja_1 .card p:last-child, #luchadores #caja_2 .card p:last-child {
+  font-weight: bold;
+}
+#luchadores #caja_1 .card_filter, #luchadores #caja_2 .card_filter {
+  flex-basis: 18%;
+  height: 300px;
+  background-color: #f7e031;
+  border: 2px solid #ba68c8;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+  cursor: pointer;
+}
+#luchadores #caja_1 .card_filter:hover, #luchadores #caja_2 .card_filter:hover {
+  transform: scale(1.05);
+  background-color: #4fc3f7;
+}
+#luchadores #caja_1 .card_filter img, #luchadores #caja_2 .card_filter img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#luchadores #caja_1 .card_filter h2, #luchadores #caja_2 .card_filter h2 {
+  color: #ec407a;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+#luchadores #caja_1 .card_filter p, #luchadores #caja_2 .card_filter p {
+  font-size: 1rem;
+  color: #4fc3f7;
+  margin-bottom: 5px;
+}
+#luchadores #caja_1 .card_filter p:last-child, #luchadores #caja_2 .card_filter p:last-child {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

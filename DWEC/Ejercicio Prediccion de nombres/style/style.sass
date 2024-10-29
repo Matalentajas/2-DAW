@@ -1,0 +1,80 @@
+*
+    margin: 0px
+    padding: 0px
+    font-family: "Montserrat", sans-serif
+body
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    background-attachment: fixed
+
+#cuerpo
+    margin-top: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    h1
+        color: #4CAF50
+        font-size: 55px
+        margin: 25px
+        
+    h2
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+
+        font-size: 18px 
+        margin: 25px
+        background-color: #fff
+        width: 34vh
+        height: 22vh
+        border-radius:20px
+
+#input_box
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 20px
+  padding: 10px
+  background-color: #f0f0f0
+  border-radius: 10px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  transition: background-color 0.3s ease, box-shadow 0.3s ease
+
+  &:hover
+    background-color: #e6e6e6
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15)
+
+  input
+    border: none
+    padding: 12px 15px
+    border-radius: 10px
+    font-size: 16px
+    background-color: #fff
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+    &::placeholder
+      color: #999
+
+  button
+    background-color: #4CAF50
+    border: none
+    color: white
+    padding: 10px 15px
+    margin-left: 10px
+    border-radius: 10px
+    cursor: pointer
+    transition: background-color 0.3s ease, transform 0.3s ease
+
+    &:hover
+      background-color: #45a049
+      transform: scale(1.05)
+
+    i
+      font-size: 18px
+#resultado
+  #loading
+    display: none
+

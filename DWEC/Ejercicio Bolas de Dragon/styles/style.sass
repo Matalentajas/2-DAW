@@ -1,0 +1,119 @@
+$light-yellow: #f7e031
+$light-blue: #4fc3f7
+$light-orange: #ff9800
+$light-green: #81c784
+$bright-pink: #ec407a
+$light-purple: #ba68c8
+$soft-shadow: rgba(0, 0, 0, 0.2)
+$transition-speed: 0.3s
+
+#main
+    display: flex
+    flex-direction: column
+    h1
+        text-align: center
+        color: $bright-pink
+        font-size: 80px
+        margin: 20px
+        font-family: 'Bangers', sans-serif
+        text-shadow: 2px 2px 4px $soft-shadow
+
+    aside
+        text-align: center
+        color: $light-blue
+        font-size: 35px
+        margin-bottom: 20px
+    #gener
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 10px
+        gap: 60px
+        font-size: 20px
+        color: $light-green
+
+#luchadores
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 20px
+  
+  #caja_1, #caja_2
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: 20px
+
+    .card
+      flex-basis: 18%
+      height: 300px
+      background-color: $light-yellow
+      border: 2px solid $light-purple
+      border-radius: 15px
+      box-shadow: 0px 4px 10px $soft-shadow
+      text-align: center
+      padding: 10px
+      margin: 10px
+      transition: transform $transition-speed ease-in-out, background-color $transition-speed
+      cursor: pointer
+
+      &:hover
+        transform: scale(1.05)
+        background-color: $light-blue
+
+      img
+        width: 100%
+        height: 60%
+        object-fit: contain
+        border-radius: 10px
+        margin-bottom: 10px
+
+      h2
+        color: $bright-pink
+        font-size: 1.5rem
+        margin-bottom: 5px
+
+      p
+        font-size: 1rem
+        color: $light-blue
+        margin-bottom: 5px
+
+        &:last-child
+          font-weight: bold
+
+    .card_filter
+      flex-basis: 18%
+      height: 300px
+      background-color: $light-yellow
+      border: 2px solid $light-purple
+      border-radius: 15px
+      box-shadow: 0px 4px 10px $soft-shadow
+      text-align: center
+      padding: 10px
+      margin: 10px
+      transition: transform $transition-speed ease-in-out, background-color $transition-speed
+      cursor: pointer
+
+      &:hover
+        transform: scale(1.05)
+        background-color: $light-blue
+
+      img
+        width: 100%
+        height: 60%
+        object-fit: contain
+        border-radius: 10px
+        margin-bottom: 10px
+
+      h2
+        color: $bright-pink
+        font-size: 1.5rem
+        margin-bottom: 5px
+
+      p
+        font-size: 1rem
+        color: $light-blue
+        margin-bottom: 5px
+
+        &:last-child
+          font-weight: bold

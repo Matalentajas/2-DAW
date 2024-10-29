@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prectoca Null_Check</title>
+</head>
+<body>
+    <script>
+
+        let enc = () => {
+            alert("Palabra encontrada")
+        }
+        let noenc = () => {
+            alert("Palabra no encontrada")
+        }
+
+        let Frase = "Me encanta buscar empresas en la VDS"
+
+        let palabra = "empresas"
+
+        let encontrado = Frase.includes("empresas") ? enc() :noenc()
+        console.log(encontrado || "Respuesta");
+         
+    </script>
+</body>
+</html>

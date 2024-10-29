@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Dragon Balls</title>
+    <!-- CSS -->
+        <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <!-- Fin de Google Fonts -->
+</head>
+<body>
+    <section id="main">
+        <header>
+            <h1>Dragon Ball Api</h1>
+        </header>
+        <aside>
+            <h2>Filtrar por genero</h2>
+            <div id="gener">
+                <div>
+                    <input type="radio" name="gender" id="hombre">
+                    <span>Hombres</span>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="mujer">
+                    <span>Mujer</span>
+                </div>
+                <button id="buscar">Buscar</button>
+            </div>
+
+        </aside>
+    </section>
+    <div id="luchadores">
+        <div id="caja_1">
+
+        </div>
+        <div id="caja_2">
+            
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
