@@ -1,0 +1,15 @@
+{% extends './layout.html' %}
+
+{% block body %}
+<div class="card card-body w-5">
+    <form action="/update/{{contact[0]}}" method="post" class="d-flex flex-column gap-4">
+        <h1>FORMULIN</h1>
+        <div class="form-group"><input type="text" placeholder="Nombre" name="fullname" required class="form-control" value="{{ contact[1] }}"></div>
+        <div class="form-group"><input type="number" placeholder="Telefono"name="phone" required class="form-control" value="{{ contact[2] }}"></div>
+        <div class="form-group"><input type="email" placeholder="Email" name="email" required class="form-control" value="{{ contact[3] }}"></div>
+        <button type="submit" class="btn btn-primary w-50">Actualizar</button>
+    </form>
+</div>
+
+
+{% endblock %}
